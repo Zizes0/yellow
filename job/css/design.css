@@ -208,10 +208,14 @@ b {
 .valeur-box3 {
     position: relative;
     background-color: #ffd81c;
-    padding: 100px;
+    padding: 30px;
     margin-right: 0px;
 
 } 
+.full_cadre{
+    width: 100%;
+    position: relative;
+}
 .head-valeurs{
     margin-left: 0px;
     margin-top: 0px;
@@ -222,6 +226,9 @@ b {
     margin-left: 0px;
     width: 60px;
 } 
+.row1{
+    height: 80%;
+}
 .cadre-image{
     position: relative;
     width: 100%;
@@ -243,16 +250,17 @@ b {
 
 .border-1 {
    
-    border: 10px solid Black;
+    border: 2px solid Black;
     margin-top: 20px;
     margin-bottom: 0px;
     margin-left: 140px;
     width: 30px;
+    z-index: 90;
 } 
 .head-Pertinence{
     position: relative;
-    margin-top: -340px;
-    right: 10px;
+    margin-top: -370px;
+    right: 0px;
 }   
 .border-pertinence {
    
@@ -260,21 +268,21 @@ b {
     border: 1px solid Black;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left:130px;
+    margin-left:160px;
     width: 34px;
 }
 .cadr-text-marg2{
     position: relative;
-    
+    text-align: center;
     margin-left: 0px;
-    margin-top: 20px;
-    font-size: medium;
+    margin-top: 0px;
+    font-size: large;
     line-height: normal;
 } 
 
 .head-engagement{
     position: relative;
-    margin-top: -340px;
+    margin-top: -370px;
     right: -15px;
 }
 .border-engagement {
@@ -282,15 +290,15 @@ b {
     border: 1px solid Black;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 163px;
+    margin-left: 173px;
     width: 32px;
 } 
 .cadr-text-marg3{
     position: relative;
     
     margin-left: 25px;
-    margin-top: 20px;
-    font-size: medium;
+    margin-top: 0px;
+    font-size: large;
     line-height: normal;
 }
 .last-black-box {
@@ -325,6 +333,7 @@ b {
     width: 100% !important;
 }
 
+
 .slider-box {
     display: flex;
     align-items: center;
@@ -355,16 +364,16 @@ b {
 
 .bx-wrapper .bx-prev {
     left: -45px !important;
-    
+    background:  none !important;
 }
 
 .bx-wrapper .bx-next{
     right: -45px !important;
-    src: url(../images/next.png);
+    background:  none !important;
 }
 .bx-wrapper .bx-prev:before {   
     left: 0;
-    content: "<";
+
     width: 30px;
     height: 30px;
     margin-top: -15px;
@@ -470,14 +479,14 @@ b {
     height: 40px;
     line-height: 2;
 }
-.message-style{ 
-    line-height: 3; 
+.message-style {
+    line-height: 2;
     width: 80%;
-    white-space: nowrap;
+    white-space: pre-wrap; /* Preserve line breaks */
+    overflow-wrap: break-word; /* Break words when necessary */
     height: 200px;
     padding-left: 10px;
     padding-bottom: 170px;
-   
 }
 .send{
     text-transform: uppercase;
